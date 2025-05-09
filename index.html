@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+    <header>
+        <div class="header-section">
+            <h3>Pragatheeswaran.</h3> 
+            <div  class="hamburger" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="nav">
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-page">
+                <div class="profile-pic">
+                    <img src="./images/profile pic.png" alt="profile pic" width="350px" height="300px">
+                </div>
+                <div class="profile-summary">
+                    <P>
+                        Hello, <span class="name">I'm Pragatheeswaran S</span><br>I'm a Engineering graduate Who is Passionate in <br><span class="role">Fullstack developement</span>
+                    </P>
+                    <button><a href="#contact">hire me</a></button>
+                    <div class="social-icon">
+                        <a href="https://github.com/PragatheeswaranVS"><img src="./images/github logo.png" alt="" width="30px" height="50px"></a>
+                        <a href="https://www.linkedin.com/in/pragatheeswaran-s-v"><img src="./images/linkedin logo.png" alt="" width="30px" height="50px"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section id="about">
+            <div class="about-page">
+                <h2 class="title">About</h2>
+                <div class="about-me">
+                    <img class="web-img" src="images/about image.png" alt="development img" width="450px" height="300px" loading="lazy">
+                    <p>
+                        I am a <span class="highlight">Frontend Developer</span> skilled in <span class="highlight">HTML, CSS, JavaScript, and React.js</span>.I build user-friendly, responsive, and interactive web applications.I also have knowledge of <span class="highlight">Python and SQL </span>for backend and database management.I enjoy solving problems and creating clean, functional designs.Currently, I am working on projects to improve my skills and showcase my work.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="skill-page">
+            <h2 class="title">skills</h2>
+                <div class="skills-container">
+                    <img src="./images/HTML5_logo_and_wordmark.svg.png" alt="html pic" width="350px" height="200px">
+                    <img src="./images/css_logo.png" alt="" width="250px" height="200px">
+                    <img src="./images/js_logo.png" alt="" width="250px" height="200px">
+                    <img src="./images/react_logo.png" alt="" width="250px" height="200px">
+                    <img src="./images/Python_logo.png" alt="" width="250px" height="200px">
+                    <img src="./images/mysql_logo.png" alt="" width="250px" height="200px">
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="project-page">
+                <h2 class="title">projects</h2>
+                <div class="project-container">
+                    <a href="https://pragatheeswaranvs.github.io/cafe-website/"><img src="./images/cafe website pic.png" alt="" width="350px" height="300px"></a>
+                    <a href="https://pragatheeswaranvs.github.io/Tourism-Website/"><img src="./images/tourism website.png" alt="" width="350px" height="300px"></a>
+                    <a href="https://pragatheeswaranvs.github.io/Tourism-Website/"><img src="./images/tourism website.png" alt="" width="350px" height="300px"></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-outer-container">
+                <div class="contact-inner-container">
+                    <h2 class="title">contact us</h2>
+                    <form action="">
+                        <p>
+                            <input type="text" id="name" class="name" placeholder="Your Name" required>
+                        </p>
+                        <p>
+                            <input type="email" id="email" class="email" placeholder="Your email" required>
+                        </p>
+                        <p>
+                            <textarea name="message" id="message" placeholder="Message Here..." required></textarea>
+                        </p>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
